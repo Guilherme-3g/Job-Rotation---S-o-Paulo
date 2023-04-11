@@ -1,0 +1,26 @@
+#include <iostream>
+#include <stdio.h>
+
+int main()
+{
+    long int x;
+    int a = 0, b = 1, aux;
+
+    printf("Digite um numero: ");
+    scanf("%li", &x);
+
+    while (b < x)
+    {   
+        aux = a;
+        a = b;
+        b = b + aux;
+        if (b == x)
+        {
+            printf("%li pertence a sequencia de fibonacci\n", x);
+            return 0;
+        }
+    }
+    
+    printf("%li nao pertence a sequencia de fibonacci\n", x);
+    return 0;
+}
