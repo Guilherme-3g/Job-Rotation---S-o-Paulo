@@ -1,0 +1,4 @@
+st ="socorram-me subi no onibus em marrocos"
+def inverte(s):
+    return s[::-1]
+print(inverte(st))
